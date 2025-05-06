@@ -4,6 +4,8 @@
 
 # 连接世界每一帧
 
+<a href="https://trendshift.io/repositories/12200" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12200" alt="Huanshere%2FVideoLingo | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
 [**English**](/README.md)｜[**简体中文**](/translations/README.zh.md)｜[**繁體中文**](/translations/README.zh-TW.md)｜[**日本語**](/translations/README.ja.md)｜[**Español**](/translations/README.es.md)｜[**Русский**](/translations/README.ru.md)｜[**Français**](/translations/README.fr.md)
 
 **QQ群：875297969**
@@ -37,20 +39,27 @@ VideoLingo 是一站式视频翻译本地化配音工具，能够一键生成 Ne
 
 与同类项目相比的优势：**绝无多行字幕，最佳的翻译质量，无缝的配音体验**
 
-## 🎥 效果演示
+## 🎥 演示
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
-### 俄语翻译
+### 双语字幕
 ---
-https://github.com/user-attachments/assets/25264b5b-6931-4d39-948c-5a1e4ce42fa7
+https://github.com/user-attachments/assets/a5c3d8d1-2b29-4ba9-b0d0-25896829d951
 
 </td>
-<td width="50%">
+<td width="33%">
 
-### GPT-SoVITS配音
+### Cosy2 声音克隆
+---
+https://github.com/user-attachments/assets/e065fe4c-3694-477f-b4d6-316917df7c0a
+
+</td>
+<td width="33%">
+
+### GPT-SoVITS 配音
 ---
 https://github.com/user-attachments/assets/47d965b2-b4ab-4a0b-9d08-b49a7bf3508c
 
@@ -70,7 +79,7 @@ https://github.com/user-attachments/assets/47d965b2-b4ab-4a0b-9d08-b49a7bf3508c
 
 ## 安装
 
-你可以不用阅读完整的文档，[**这里**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh)有一个在线AI助手可以帮助你。
+遇到问题？在[**这里**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh)与我们的免费在线AI助手交流获取帮助。
 
 > **注意:** 在 Windows 上使用 NVIDIA GPU 加速需要先完成以下步骤:
 > 1. 安装 [CUDA Toolkit 12.6](https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.76_windows.exe)
@@ -114,7 +123,7 @@ docker run -d -p 8501:8501 --gpus all videolingo
 
 ## API
 本项目支持 OpenAI-Like 格式的 api 和多种配音接口：
-- LLM: `claude-3-5-sonnet-20240620`, **`gemini-2.0-flash-exp`**, `gpt-4o`, `deepseek-chat(v3)`, ...（按效果排序）
+- LLM: `claude-3-5-sonnet`, `gpt-4.1`, `deepseek-v3`, `gemini-2.0-flash`, ...（按效果排序，使用 gemini-2.5-flash 时需谨慎...）
 - WhisperX: 本地运行 WhisperX 或使用 302.ai API
 - TTS: `azure-tts`, `openai-tts`, `siliconflow-fishtts`, **`fish-tts`**, `GPT-SoVITS`, `edge-tts`, `*custom-tts`(你可以在 custom_tts.py 中自定义 TTS!)
 

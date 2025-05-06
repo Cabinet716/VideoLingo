@@ -5,6 +5,8 @@
     "Resolution": "Разрешение",
     "Download Video": "Скачать видео",
     "Or upload video": "Или загрузить видео",
+    "Youtube Settings": "Настройки Youtube",
+    "Cookies Path": "Путь к файлу Cookies",
     "LLM Configuration": "Настройка LLM",
     "API_KEY": "API-ключ",
     "BASE_URL": "Базовый URL",
@@ -98,9 +100,11 @@
     "Audio processing complete! 🎇": "Обработка аудио завершена! 🎇",
     "Hello, welcome to VideoLingo. If you encounter any issues, feel free to get instant answers with our Free QA Agent <a href=\"https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh\" target=\"_blank\">here</a>! You can also try out our SaaS website at <a href=\"https://videolingo.io\" target=\"_blank\">videolingo.io</a> for free!": "Здравствуйте, добро пожаловать в VideoLingo. Если у вас возникнут вопросы, вы можете получить мгновенные ответы с помощью нашего бесплатного QA-агента <a href=\"https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh\" target=\"_blank\">здесь</a>! Вы также можете бесплатно попробовать наш SaaS-сайт <a href=\"https://videolingo.io\" target=\"_blank\">videolingo.io</a>!",
     "WhisperX Runtime": "Среда выполнения WhisperX",
-    "Local runtime requires >8GB GPU, cloud runtime requires 302ai API key": "Локальная среда требует GPU >8ГБ, облачная среда требует API-ключ 302ai",
+    "Local runtime requires >8GB GPU, cloud runtime requires 302ai API key, elevenlabs runtime requires ElevenLabs API key": "Локальная среда требует GPU >8ГБ, облачная среда требует API-ключ 302ai, elevenlabs среда требует API-ключ ElevenLabs",
     "WhisperX 302ai API": "API 302ai WhisperX",
     "Detected NVIDIA GPU(s)": "Обнаружен(ы) GPU NVIDIA",
     "No NVIDIA GPU detected": "GPU NVIDIA не обнаружен",
-    "No NVIDIA GPU detected or NVIDIA drivers not properly installed": "GPU NVIDIA не обнаружен или драйверы NVIDIA установлены неправильно"
+    "No NVIDIA GPU detected or NVIDIA drivers not properly installed": "GPU NVIDIA не обнаружен или драйверы NVIDIA установлены неправильно",
+    "LLM JSON Format Support": "Поддержка формата JSON для LLM",
+    "Enable if your LLM supports JSON mode output": "Включите, если ваш LLM поддерживает вывод в формате JSON"
 }

@@ -4,6 +4,8 @@
 
 # 連結世界，逐格前行
 
+<a href="https://trendshift.io/repositories/12200" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12200" alt="Huanshere%2FVideoLingo | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
 [**English**](/README.md)｜[**简体中文**](/translations/README.zh.md)｜[**繁體中文**](/translations/README.zh-TW.md)｜[**日本語**](/translations/README.ja.md)｜[**Español**](/translations/README.es.md)｜[**Русский**](/translations/README.ru.md)｜[**Français**](/translations/README.fr.md)
 
 </div>
@@ -39,14 +41,21 @@ VideoLingo 是一個全方位的影片翻譯、本地化和配音工具，旨在
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
-### 俄語翻譯
+### 雙語字幕
 ---
-https://github.com/user-attachments/assets/25264b5b-6931-4d39-948c-5a1e4ce42fa7
+https://github.com/user-attachments/assets/a5c3d8d1-2b29-4ba9-b0d0-25896829d951
 
 </td>
-<td width="50%">
+<td width="33%">
+
+### Cosy2 聲音克隆
+---
+https://github.com/user-attachments/assets/e065fe4c-3694-477f-b4d6-316917df7c0a
+
+</td>
+<td width="33%">
 
 ### GPT-SoVITS 配音
 ---
@@ -68,7 +77,7 @@ https://github.com/user-attachments/assets/47d965b2-b4ab-4a0b-9d08-b49a7bf3508c
 
 ## 安裝
 
-您無需閱讀所有文檔，[**這裡**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh)有一個在線 AI 助手可以幫助您。
+遇到任何問題？在[**這裡**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh)與我們的免費在線 AI 助手聊天以獲取幫助。
 
 > **注意：** Windows 用戶如使用 NVIDIA GPU，請在安裝前執行以下步驟：
 > 1. 安裝 [CUDA Toolkit 12.6](https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.76_windows.exe)
@@ -112,7 +121,7 @@ docker run -d -p 8501:8501 --gpus all videolingo
 
 ## APIs
 VideoLingo 支持 OpenAI 格式的 API 和各種 TTS 接口：
-- LLM：`claude-3-5-sonnet-20240620`、`deepseek-chat(v3)`、`gemini-2.0-flash-exp`、`gpt-4o`、...（按性能排序）
+- LLM：`claude-3-5-sonnet`、`gpt-4.1`、`deepseek-v3`、`gemini-2.0-flash`、...（按性能排序，使用 gemini-2.5-flash 時請謹慎...）
 - WhisperX：本地運行 whisperX 或使用 302.ai API
 - TTS：`azure-tts`、`openai-tts`、`siliconflow-fishtts`、**`fish-tts`**、`GPT-SoVITS`、`edge-tts`、`*custom-tts`（您可以在 custom_tts.py 中修改自己的 TTS！）
 

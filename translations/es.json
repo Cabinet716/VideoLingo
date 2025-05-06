@@ -5,6 +5,8 @@
     "Resolution": "Resolución",
     "Download Video": "Descargar video",
     "Or upload video": "O subir video",
+    "Youtube Settings": "Configuración de Youtube",
+    "Cookies Path": "Ruta del archivo de Cookies",
     "LLM Configuration": "Configuración de LLM",
     "API_KEY": "Clave API",
     "BASE_URL": "URL base",
@@ -75,7 +77,7 @@
     "Audio processing complete! 🎇": "¡Procesamiento de audio completado! 🎇",
     "Hello, welcome to VideoLingo. If you encounter any issues, feel free to get instant answers with our Free QA Agent <a href=\"https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh\" target=\"_blank\">here</a>! You can also try out our SaaS website at <a href=\"https://videolingo.io\" target=\"_blank\">videolingo.io</a> for free!": "Hola, bienvenido a VideoLingo. Si encuentra algún problema, no dude en obtener respuestas instantáneas con nuestro Agente de preguntas y respuestas gratuito <a href=\"https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh\" target=\"_blank\">aquí</a>. ¡También puede probar gratis nuestro sitio web SaaS en <a href=\"https://videolingo.io\" target=\"_blank\">videolingo.io</a>!",
     "WhisperX Runtime": "Entorno de WhisperX",
-    "Local runtime requires >8GB GPU, cloud runtime requires 302ai API key": "El entorno local requiere GPU >8GB, el entorno en la nube requiere clave API 302ai",
+    "Local runtime requires >8GB GPU, cloud runtime requires 302ai API key, elevenlabs runtime requires ElevenLabs API key": "El entorno local requiere GPU >8GB, el entorno en la nube requiere clave API 302ai, el entorno elevenlabs requiere clave API ElevenLabs",
     "WhisperX 302ai API": "API 302ai de WhisperX",
     "=====NOTE2=====": "A continuación está en install.py",
     "🚀 Starting Installation": "🚀 Iniciando instalación",
@@ -102,5 +104,7 @@
     "Installing requirements using `pip install -r requirements.txt`": "Instalando dependencias usando `pip install -r requirements.txt`",
     "Detected NVIDIA GPU(s)": "GPU(s) NVIDIA detectada(s)",
     "No NVIDIA GPU detected": "No se detectó GPU NVIDIA",
-    "No NVIDIA GPU detected or NVIDIA drivers not properly installed": "No se detectó GPU NVIDIA o los controladores NVIDIA no están instalados correctamente"
+    "No NVIDIA GPU detected or NVIDIA drivers not properly installed": "No se detectó GPU NVIDIA o los controladores NVIDIA no están instalados correctamente",
+    "LLM JSON Format Support": "Soporte de formato JSON para LLM",
+    "Enable if your LLM supports JSON mode output": "Activar si su LLM admite salida en modo JSON"
 }

@@ -5,6 +5,8 @@
     "Resolution": "解像度",
     "Download Video": "動画をダウンロード",
     "Or upload video": "または動画をアップロード",
+    "Youtube Settings": "Youtube 設定",
+    "Cookies Path": "Cookieファイルのパス",
     "LLM Configuration": "LLM設定",
     "API_KEY": "APIキー",
     "BASE_URL": "ベースURL",
@@ -75,7 +77,7 @@
     "Audio processing complete! 🎇": "音声処理完了！🎇",
     "Hello, welcome to VideoLingo. If you encounter any issues, feel free to get instant answers with our Free QA Agent <a href=\"https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh\" target=\"_blank\">here</a>! You can also try out our SaaS website at <a href=\"https://videolingo.io\" target=\"_blank\">videolingo.io</a> for free!": "VideoLingoへようこそ。問題が発生した場合は、無料のQAエージェント<a href=\"https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh\" target=\"_blank\">こちら</a>で即座に回答を得ることができます！また、SaaSウェブサイト<a href=\"https://videolingo.io\" target=\"_blank\">videolingo.io</a>を無料でお試しいただけます！",
     "WhisperX Runtime": "WhisperX ランタイム",
-    "Local runtime requires >8GB GPU, cloud runtime requires 302ai API key": "ローカルランタイムは8GB以上のGPUが必要、クラウドランタイムは302ai APIキーが必要です",
+    "Local runtime requires >8GB GPU, cloud runtime requires 302ai API key, elevenlabs runtime requires ElevenLabs API key": "ローカルランタイムは8GB以上のGPUが必要、クラウドランタイムは302ai APIキーが必要です、elevenlabsランタイムはElevenLabs APIキーが必要です",
     "WhisperX 302ai API": "WhisperX 302ai API",
     "=====NOTE2=====": "以下はinstall.pyの内容です",
     "🚀 Starting Installation": "🚀 インストールを開始",
@@ -102,5 +104,7 @@
     "Installing requirements using `pip install -r requirements.txt`": "依存関係を `pip install -r requirements.txt` でインストール中",
     "Detected NVIDIA GPU(s)": "NVIDIA GPUを検出しました",
     "No NVIDIA GPU detected": "NVIDIA GPUが検出されません",
-    "No NVIDIA GPU detected or NVIDIA drivers not properly installed": "NVIDIA GPUが検出されないか、NVIDIAドライバーが正しくインストールされていません"
+    "No NVIDIA GPU detected or NVIDIA drivers not properly installed": "NVIDIA GPUが検出されないか、NVIDIAドライバーが正しくインストールされていません",
+    "LLM JSON Format Support": "LLM JSON形式サポート",
+    "Enable if your LLM supports JSON mode output": "LLMがJSON出力モードをサポートしている場合に有効化"
 }

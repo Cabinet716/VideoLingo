@@ -4,6 +4,8 @@
 
 # Объединяя Мир, Кадр за Кадром
 
+<a href="https://trendshift.io/repositories/12200" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12200" alt="Huanshere%2FVideoLingo | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+
 [**English**](/README.md)｜[**简体中文**](/translations/README.zh.md)｜[**繁體中文**](/translations/README.zh-TW.md)｜[**日本語**](/translations/README.ja.md)｜[**Español**](/translations/README.es.md)｜[**Русский**](/translations/README.ru.md)｜[**Français**](/translations/README.fr.md)
 
 </div>
@@ -39,16 +41,23 @@ VideoLingo - это универсальный инструмент для пе�
 
 <table>
 <tr>
-<td width="50%">
+<td width="33%">
 
-### Перевод на русский
+### Двойные Субтитры
 ---
-https://github.com/user-attachments/assets/25264b5b-6931-4d39-948c-5a1e4ce42fa7
+https://github.com/user-attachments/assets/a5c3d8d1-2b29-4ba9-b0d0-25896829d951
 
 </td>
-<td width="50%">
+<td width="33%">
 
-### Дубляж GPT-SoVITS
+### Клонирование Голоса Cosy2
+---
+https://github.com/user-attachments/assets/e065fe4c-3694-477f-b4d6-316917df7c0a
+
+</td>
+<td width="33%">
+
+### GPT-SoVITS с моим голосом
 ---
 https://github.com/user-attachments/assets/47d965b2-b4ab-4a0b-9d08-b49a7bf3508c
 
@@ -68,7 +77,7 @@ https://github.com/user-attachments/assets/47d965b2-b4ab-4a0b-9d08-b49a7bf3508c
 
 ## Установка
 
-Вам не нужно читать всю документацию, [**здесь**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh) есть онлайн ИИ-агент, который поможет вам.
+Возникли проблемы? Общайтесь с нашим бесплатным онлайн ИИ-агентом [**здесь**](https://share.fastgpt.in/chat/share?shareId=066w11n3r9aq6879r4z0v9rh), который поможет вам.
 
 > **Примечание:** Для пользователей Windows с GPU NVIDIA выполните следующие шаги перед установкой:
 > 1. Установите [CUDA Toolkit 12.6](https://developer.download.nvidia.com/compute/cuda/12.6.0/local_installers/cuda_12.6.0_560.76_windows.exe)
@@ -112,7 +121,7 @@ docker run -d -p 8501:8501 --gpus all videolingo
 
 ## API
 VideoLingo поддерживает формат API, подобный OpenAI, и различные интерфейсы TTS:
-- LLM: `claude-3-5-sonnet-20240620`, `deepseek-chat(v3)`, `gemini-2.0-flash-exp`, `gpt-4o`, ... (отсортировано по производительности)
+- LLM: `claude-3-5-sonnet`, `gpt-4.1`, `deepseek-v3`, `gemini-2.0-flash`, ... (отсортировано по производительности, будьте осторожны с gemini-2.5-flash...)
 - WhisperX: Запускайте whisperX локально или используйте API 302.ai
 - TTS: `azure-tts`, `openai-tts`, `siliconflow-fishtts`, **`fish-tts`**, `GPT-SoVITS`, `edge-tts`, `*custom-tts`(Вы можете модифицировать свой собственный TTS в custom_tts.py!)
 

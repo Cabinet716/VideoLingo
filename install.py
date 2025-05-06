@@ -19,8 +19,10 @@ def check_nvidia_gpu():
     install_package("pynvml")
     import pynvml
     from translations.translations import translate as t
+    initialized = False
     try:
         pynvml.nvmlInit()
+        initialized = True
         device_count = pynvml.nvmlDeviceGetCount()
         if device_count > 0:
             print(t("Detected NVIDIA GPU(s)"))
@@ -36,7 +38,8 @@ def check_nvidia_gpu():
         print(t("No NVIDIA GPU detected or NVIDIA drivers not properly installed"))
         return False
     finally:
-        pynvml.nvmlShutdown()
+        if initialized:
+            pynvml.nvmlShutdown()
 
 def check_ffmpeg():
     from rich.console import Console
@@ -80,7 +83,8 @@ def main():
     from InquirerPy import inquirer
     from translations.translations import translate as t
     from translations.translations import DISPLAY_LANGUAGES
-    from core.config_utils import load_key, update_key
+    from core.utils.config_utils import load_key, update_key
+    from core.utils.decorator import except_handler
 
     console = Console()
     
@@ -112,7 +116,7 @@ def main():
         message=t("Do you need to auto-configure PyPI mirrors? (Recommended if you have difficulty accessing pypi.org)"),
         default=True
     ).execute():
-        from core.pypi_autochoose import main as choose_mirror
+        from core.utils.pypi_autochoose import main as choose_mirror
         choose_mirror()
 
     # Detect system and GPU
@@ -125,19 +129,12 @@ def main():
         console.print(Panel(t(f"{system_name} detected, installing CPU version of PyTorch... Note: it might be slow during whisperX transcription."), style="cyan"))
         subprocess.check_call([sys.executable, "-m", "pip", "install", "torch==2.1.2", "torchaudio==2.1.2"])
 
+    @except_handler("Failed to install project")
     def install_requirements():
-        try:
-            subprocess.check_call([
-                sys.executable, 
-                "-m", 
-                "pip", 
-                "install", 
-                "-r", 
-                "requirements.txt"
-            ], env={**os.environ, "PIP_NO_CACHE_DIR": "0", "PYTHONIOENCODING": "utf-8"})
-        except subprocess.CalledProcessError as e:
-            console.print(Panel(t("❌ Failed to install requirements:") + str(e), style="red"))
+        console.print(Panel(t("Installing project in editable mode using `pip install -e .`"), style="cyan"))
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-e", "."], env={**os.environ, "PIP_NO_CACHE_DIR": "0", "PYTHONIOENCODING": "utf-8"})
 
+    @except_handler("Failed to install Noto fonts")
     def install_noto_font():
         # Detect Linux distribution type
         if os.path.exists('/etc/debian_version'):
@@ -151,17 +148,13 @@ def main():
         else:
             console.print("Warning: Unrecognized Linux distribution, please install Noto fonts manually", style="yellow")
             return
-            
-        try:
-            subprocess.run(cmd, check=True)
-            console.print(f"✅ Successfully installed Noto fonts using {pkg_manager}", style="green")
-        except subprocess.CalledProcessError:
-            console.print("❌ Failed to install Noto fonts, please install manually", style="red")
+
+        subprocess.run(cmd, check=True)
+        console.print(f"✅ Successfully installed Noto fonts using {pkg_manager}", style="green")
 
     if platform.system() == 'Linux':
         install_noto_font()
     
-    console.print(Panel(t("Installing requirements using `pip install -r requirements.txt`"), style="cyan"))
     install_requirements()
     check_ffmpeg()
     
